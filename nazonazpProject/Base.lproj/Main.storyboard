@@ -18,31 +18,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pcm-pD-so3">
-                                <rect key="frame" x="130" y="270" width="157" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="クイズ作成"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6E-2s-cXy">
                                 <rect key="frame" x="117" y="444" width="182" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="クイズを解く"/>
+                                <connections>
+                                    <action selector="AnswerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sT2-3C-J2H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pcm-pD-so3">
+                                <rect key="frame" x="130" y="242" width="157" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="クイズ作成"/>
+                                <connections>
+                                    <action selector="QuizuMadeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pOB-P0-CEV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="FIc-5S-InO" kind="show" identifier="toAddQuizu" id="UPV-Md-usr"/>
+                        <segue destination="4Mu-A6-iUt" kind="show" identifier="toAnswerQuizu" id="3q9-Tg-ArF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-352" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Anawer Quizu View Controller-->
         <scene sceneID="Oea-1E-5h8">
             <objects>
-                <viewController id="4Mu-A6-iUt" sceneMemberID="viewController">
+                <viewController id="4Mu-A6-iUt" customClass="anawerQuizuViewController" customModule="nazonazpProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZmW-cc-LPc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,10 +107,10 @@
             </objects>
             <point key="canvasLocation" x="576.81159420289862" y="632.8125"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Quizu View Controller-->
         <scene sceneID="WHD-FM-u9S">
             <objects>
-                <viewController id="FIc-5S-InO" sceneMemberID="viewController">
+                <viewController id="FIc-5S-InO" customClass="addQuizuViewController" customModule="nazonazpProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YRz-eC-5YJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
