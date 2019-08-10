@@ -23,9 +23,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="クイズ作成"/>
-                                <connections>
-                                    <action selector="QuizuMadeBuuton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jbl-Fg-JnA"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6E-2s-cXy">
                                 <rect key="frame" x="117" y="444" width="182" height="80"/>
