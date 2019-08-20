@@ -15,12 +15,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //画面遷移　view->addquizu
     @IBAction func QuizuMadeButton(_ sender: UIButton) {
         performSegue(withIdentifier: "toAddQuizu", sender: nil)
     }
-    
+    //画面遷移　view->regional
     @IBAction func AnswerButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "toAnswerQuizu", sender: nil)
+        performSegue(withIdentifier: "toRegional", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

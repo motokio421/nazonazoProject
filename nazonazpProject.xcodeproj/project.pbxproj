@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7D763B0022FED0350015898D /* addQuizuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D763AFF22FED0350015898D /* addQuizuViewController.swift */; };
 		7D763B0422FED1AF0015898D /* anawerQuizuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D763B0322FED1AF0015898D /* anawerQuizuViewController.swift */; };
+		7D942049230B9DB000EC9593 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D942048230B9DB000EC9593 /* SplashViewController.swift */; };
+		7D94204B230B9E3300EC9593 /* RegionalSelctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D94204A230B9E3300EC9593 /* RegionalSelctionViewController.swift */; };
 		7DC575FE22FC475600E49C40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC575FD22FC475600E49C40 /* AppDelegate.swift */; };
 		7DC5760022FC475600E49C40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC575FF22FC475600E49C40 /* ViewController.swift */; };
 		7DC5760322FC475600E49C40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC5760122FC475600E49C40 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		7D763AFF22FED0350015898D /* addQuizuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addQuizuViewController.swift; sourceTree = "<group>"; };
 		7D763B0322FED1AF0015898D /* anawerQuizuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anawerQuizuViewController.swift; sourceTree = "<group>"; };
+		7D942048230B9DB000EC9593 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		7D94204A230B9E3300EC9593 /* RegionalSelctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionalSelctionViewController.swift; sourceTree = "<group>"; };
 		7DC575FA22FC475600E49C40 /* nazonazpProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nazonazpProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC575FD22FC475600E49C40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DC575FF22FC475600E49C40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +49,8 @@
 				7D763B0322FED1AF0015898D /* anawerQuizuViewController.swift */,
 				7DC575FF22FC475600E49C40 /* ViewController.swift */,
 				7D763AFF22FED0350015898D /* addQuizuViewController.swift */,
+				7D942048230B9DB000EC9593 /* SplashViewController.swift */,
+				7D94204A230B9E3300EC9593 /* RegionalSelctionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -149,10 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D94204B230B9E3300EC9593 /* RegionalSelctionViewController.swift in Sources */,
 				7D763B0022FED0350015898D /* addQuizuViewController.swift in Sources */,
 				7D763B0422FED1AF0015898D /* anawerQuizuViewController.swift in Sources */,
 				7DC5760022FC475600E49C40 /* ViewController.swift in Sources */,
 				7DC575FE22FC475600E49C40 /* AppDelegate.swift in Sources */,
+				7D942049230B9DB000EC9593 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
