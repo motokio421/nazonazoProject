@@ -7,16 +7,29 @@
 //
 
 import UIKit
+import RevealingSplashView
 
 class SplashViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let revealingSplashView = RevealingSplashView(iconImage: UIImage(named: "waido_logo")!,iconInitialSize: CGSize(width: 90, height: 90), backgroundColor: UIColor(red:0.11, green:0.56, blue:0.95, alpha:1.0))
+        
+        self.view.addSubview(revealingSplashView)
+        
+        revealingSplashView.startAnimation(){
+            print("Completed")
+            
+            
+        }
+        
+       
+        performSegue(withIdentifier: "toViewcontroller", sender: nil)
+    
     }
     
-
+    
     /*
     // MARK: - Navigation
 
