@@ -20,12 +20,12 @@ class SplashViewController: UIViewController {
         
         revealingSplashView.startAnimation(){
             print("Completed")
-            
+            self.performSegue(withIdentifier: "toViewcontroller", sender: nil)
             
         }
         
        
-        performSegue(withIdentifier: "toViewcontroller", sender: nil)
+        
     
     }
     
