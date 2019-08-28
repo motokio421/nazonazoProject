@@ -290,10 +290,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e08-h4-3J9">
-                                <rect key="frame" x="184" y="396" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e08-h4-3J9">
+                                <rect key="frame" x="167" y="371" width="62" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="nisi"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -301,14 +301,18 @@
                     </view>
                     <connections>
                         <outlet property="imageview" destination="YXw-hd-OOT" id="Tdu-sx-0q3"/>
+                        <outlet property="nisibeButton" destination="e08-h4-3J9" id="hlj-UY-UCj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YJf-8L-aIG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114" y="16"/>
+            <point key="canvasLocation" x="113.04347826086958" y="15.401785714285714"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nisi" width="102" height="102"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="d8z-dG-g8G"/>
+        <segue reference="kBt-jW-5kO"/>
     </inferredMetricsTieBreakers>
 </document>

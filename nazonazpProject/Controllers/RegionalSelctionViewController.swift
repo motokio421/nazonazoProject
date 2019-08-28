@@ -12,6 +12,8 @@ class RegionalSelctionViewController: UIViewController {
     
     @IBOutlet weak var imageview: UIImageView!
     
+    @IBOutlet weak var nisibeButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
