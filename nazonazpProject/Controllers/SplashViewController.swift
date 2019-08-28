@@ -18,6 +18,7 @@ class SplashViewController: UIViewController {
         
         self.view.addSubview(revealingSplashView)
         
+        // splash終わった後の処理
         revealingSplashView.startAnimation(){
             print("Completed")
             self.performSegue(withIdentifier: "toViewcontroller", sender: nil)

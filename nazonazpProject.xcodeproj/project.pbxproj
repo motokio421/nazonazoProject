@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		7D942049230B9DB000EC9593 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D942048230B9DB000EC9593 /* SplashViewController.swift */; };
 		7D94204B230B9E3300EC9593 /* RegionalSelctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D94204A230B9E3300EC9593 /* RegionalSelctionViewController.swift */; };
 		7D94204D230D177A00EC9593 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D94204C230D177A00EC9593 /* GoogleService-Info.plist */; };
+		7D9DDE0A230F7C7A00074068 /* addQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9DDE09230F7C7A00074068 /* addQuiz.swift */; };
 		7DC575FE22FC475600E49C40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC575FD22FC475600E49C40 /* AppDelegate.swift */; };
 		7DC5760022FC475600E49C40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC575FF22FC475600E49C40 /* ViewController.swift */; };
 		7DC5760322FC475600E49C40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC5760122FC475600E49C40 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		7D942048230B9DB000EC9593 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		7D94204A230B9E3300EC9593 /* RegionalSelctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionalSelctionViewController.swift; sourceTree = "<group>"; };
 		7D94204C230D177A00EC9593 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7D9DDE09230F7C7A00074068 /* addQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addQuiz.swift; sourceTree = "<group>"; };
 		7DC575FA22FC475600E49C40 /* nazonazpProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nazonazpProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC575FD22FC475600E49C40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DC575FF22FC475600E49C40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +58,6 @@
 				DB7A0F426E83DFEB4C62FA3D /* Pods-nazonazpProject.debug.xcconfig */,
 				0DC58E7F872751496E0986F8 /* Pods-nazonazpProject.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -70,6 +71,14 @@
 				7D94204A230B9E3300EC9593 /* RegionalSelctionViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7D9DDE08230F7C3100074068 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				7D9DDE09230F7C7A00074068 /* addQuiz.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 		7DC575F122FC475600E49C40 = {
@@ -93,6 +102,7 @@
 		7DC575FC22FC475600E49C40 /* nazonazpProject */ = {
 			isa = PBXGroup;
 			children = (
+				7D9DDE08230F7C3100074068 /* Objects */,
 				7D763B0222FED1290015898D /* Controllers */,
 				7DC575FD22FC475600E49C40 /* AppDelegate.swift */,
 				7DC5760122FC475600E49C40 /* Main.storyboard */,
@@ -232,6 +242,7 @@
 				7D763B0022FED0350015898D /* addQuizuViewController.swift in Sources */,
 				7D763B0422FED1AF0015898D /* anawerQuizuViewController.swift in Sources */,
 				7DC5760022FC475600E49C40 /* ViewController.swift in Sources */,
+				7D9DDE0A230F7C7A00074068 /* addQuiz.swift in Sources */,
 				7DC575FE22FC475600E49C40 /* AppDelegate.swift in Sources */,
 				7D942049230B9DB000EC9593 /* SplashViewController.swift in Sources */,
 			);
