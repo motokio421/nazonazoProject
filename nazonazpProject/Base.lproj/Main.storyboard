@@ -116,6 +116,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="西辺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QjH-zw-htL">
+                                <rect key="frame" x="183" y="156" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ifc-v9-QZa"/>
@@ -132,6 +139,15 @@
                     <view key="view" contentMode="scaleToFill" id="qr0-pk-3js">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="平良" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mc-AC-m4c">
+                                <rect key="frame" x="170" y="190" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="97R-8i-JN1"/>
                     </view>
@@ -147,6 +163,15 @@
                     <view key="view" contentMode="scaleToFill" id="5aY-W5-Y3C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="多良間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEV-Zh-sTg">
+                                <rect key="frame" x="186" y="227" width="52" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pll-Um-EBR"/>
                     </view>
@@ -284,16 +309,25 @@
                                 <rect key="frame" x="218" y="440" width="60" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="hirara"/>
+                                <connections>
+                                    <action selector="hiraraDidCkickButton:" destination="HvZ-aj-WdX" eventType="touchUpInside" id="e2H-N9-jLx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e08-h4-3J9">
                                 <rect key="frame" x="167" y="371" width="60" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="nisi"/>
+                                <connections>
+                                    <action selector="nisibeDidClickButton:" destination="HvZ-aj-WdX" eventType="touchUpInside" id="ndC-qy-M7J"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWW-5U-rnR">
-                                <rect key="frame" x="72" y="460" width="60" height="61"/>
+                                <rect key="frame" x="77" y="476" width="60" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="tarama"/>
+                                <connections>
+                                    <action selector="taramaDidClickButton:" destination="HvZ-aj-WdX" eventType="touchUpInside" id="FXp-Q3-tiW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -301,12 +335,14 @@
                     </view>
                     <connections>
                         <outlet property="imageview" destination="YXw-hd-OOT" id="Tdu-sx-0q3"/>
-                        <outlet property="nisibeButton" destination="e08-h4-3J9" id="hlj-UY-UCj"/>
+                        <segue destination="4Mu-A6-iUt" kind="show" identifier="tonisibeAnswer" id="DJi-Vd-dIy"/>
+                        <segue destination="Uc9-sZ-bAY" kind="show" identifier="toHirara" id="1b7-m2-XhE"/>
+                        <segue destination="8pt-Y5-0wC" kind="show" identifier="toTarama" id="vlg-t6-RPH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YJf-8L-aIG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113.04347826086958" y="15.401785714285714"/>
+            <point key="canvasLocation" x="438" y="-11"/>
         </scene>
     </scenes>
     <resources>

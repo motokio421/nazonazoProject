@@ -12,7 +12,6 @@ class RegionalSelctionViewController: UIViewController {
     
     @IBOutlet weak var imageview: UIImageView!
     
-    @IBOutlet weak var nisibeButton: UIButton!
     
 
     override func viewDidLoad() {
@@ -27,5 +26,18 @@ class RegionalSelctionViewController: UIViewController {
     }
     
 
+    @IBAction func nisibeDidClickButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "tonisibeAnswer", sender: nil)
+    }
+    
+    @IBAction func hiraraDidCkickButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "toHirara", sender: nil)
+    }
+    
+    @IBAction func taramaDidClickButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "toTarama", sender: nil)
+    }
+    
     
 }
+
