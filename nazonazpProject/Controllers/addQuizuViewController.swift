@@ -53,6 +53,15 @@ class addQuizuViewController: UIViewController {
         
         //firebaseに接続
         let db = Firestore.firestore()
+        db.collection("questions").addDocument(data: [
+            "question": questonTextfiled.text,
+            "answer": answerTextfiled.text,
+            "dummy1": dummy1Textfiled.text,
+            "dummy2": dummy2Textfiled.text,
+            "dummy3": dummy3Textfiled.text,
+            "area": areaTextfield.text
+            
+        ])
         
         //firestoreにquestionsを登録
         
