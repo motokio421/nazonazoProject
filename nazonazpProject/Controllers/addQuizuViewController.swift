@@ -25,7 +25,9 @@ class addQuizuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //配列作成
         let data: [[String]] = [["西辺", "平良", "多良間"]]
+        
         let mcInputView = McPicker(data: data)
         mcInputView.backgroundColor = .gray
         mcInputView.backgroundColorAlpha = 0.25
@@ -63,7 +65,7 @@ class addQuizuViewController: UIViewController {
             
         ])
         
-        //firestoreにquestionsを登録
+       
         
         
         
