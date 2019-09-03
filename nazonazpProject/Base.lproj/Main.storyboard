@@ -114,11 +114,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfy-8f-CcI">
-                                <rect key="frame" x="127" y="633" width="153" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="answer"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ifc-v9-QZa"/>
@@ -427,7 +422,6 @@
         <image name="tarama" width="102" height="102"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DJi-Vd-dIy"/>
         <segue reference="4VT-8O-CW6"/>
         <segue reference="d8z-dG-g8G"/>
     </inferredMetricsTieBreakers>

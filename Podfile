@@ -13,5 +13,6 @@ target 'nazonazpProject' do
   pod 'Firebase/Auth'
   pod "McPicker"
   pod 'McPicker', '~> 2.0.0'
+  pod 'STPopup'
 end
  

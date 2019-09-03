@@ -26,6 +26,8 @@ class RegionalSelctionViewController: UIViewController {
     }
     
 //地域ごとに画面遷移
+    
+    
     @IBAction func nisibeDidClickButton(_ sender: UIButton) {
         performSegue(withIdentifier: "tonisibeAnswer", sender: "西辺")
     }
@@ -39,26 +41,29 @@ class RegionalSelctionViewController: UIViewController {
             nextVC.area = sender as! String
             
         }
+//         else if segue.identifier == "toHirara" {
+//
+//            let nextVC1 = segue.destination as! hiraraAnswerViewController
+//
+//           nextVC1.area = sender as! String
+//
+//        } else {
+//
+//            let nextVC = segue.destination as! taramaAnswerViewController
+//
+//            nextVC.area = sender as! String
+//
+//        }
         
     }
     
     @IBAction func hiraraDidCkickButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "toHirara", sender: nil)
+        performSegue(withIdentifier: "toHirara", sender: "平良")
     }
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        
-//        if segue.identifier == "tonisibeAnswer" {
-//            
-//            let nextVC = segue.destination as! anawerQuizuViewController
-//            
-//            nextVC.area = sender as! String
-//            
-//        }
-//        
-//    }
+
     
     @IBAction func taramaDidClickButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "toTarama", sender: nil)
+        performSegue(withIdentifier: "toTarama", sender: "多良間")
     }
     
     

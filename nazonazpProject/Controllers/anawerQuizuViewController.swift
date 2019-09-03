@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import STPopup
 
 
 class anawerQuizuViewController: UIViewController {
@@ -28,7 +29,7 @@ class anawerQuizuViewController: UIViewController {
     var quiz:AddQuiz! = nil {
         willSet {
             textView.text = newValue.question
-            answerbutton1.text
+            random(quiz: newValue)
         }
     }
 
@@ -78,6 +79,18 @@ class anawerQuizuViewController: UIViewController {
     @IBAction func backToAreaButton(_ sender: UIButton) {
         performSegue(withIdentifier: "tobackarea", sender: nil)
         
+    }
+    
+    //問題ランダム
+    //答えの配列作成
+    func random(quiz: AddQuiz) {
+        var answers = [quiz.answer, quiz.dummy1, quiz.dummy2, quiz.dummy3]
+        answers.shuffle()
+        
+        answerbutton1.setTitle(answers[0], for: .normal)
+        answerbutton2.setTitle(answers[1], for: .normal)
+        answerbutton3.setTitle(answers[2], for: .normal)
+        answerbutton4.setTitle(answers[3], for: .normal)
     }
     
  

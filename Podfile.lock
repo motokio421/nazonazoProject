@@ -118,6 +118,7 @@ PODS:
   - nanopb/encode (0.3.901)
   - Protobuf (3.9.0)
   - RevealingSplashView (0.6.0)
+  - STPopup (1.8.7)
 
 DEPENDENCIES:
   - Firebase/Analytics
@@ -127,6 +128,7 @@ DEPENDENCIES:
   - McPicker
   - McPicker (~> 2.0.0)
   - RevealingSplashView
+  - STPopup
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -152,6 +154,7 @@ SPEC REPOS:
     - nanopb
     - Protobuf
     - RevealingSplashView
+    - STPopup
 
 SPEC CHECKSUMS:
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
@@ -176,7 +179,8 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 1097ca58584c8d9be81bfbf2c5ff5975648dd87a
   RevealingSplashView: 40c5a770894459736acdc95655eeba0dd30ce91c
+  STPopup: a9045557bc48a0df51fbb7bf0544447c5fe84d34
 
-PODFILE CHECKSUM: d545bde60b490a7b389a6051f0ac9ea9f7b559ba
+PODFILE CHECKSUM: f731b4eca2555bb69b76e7917464f3fe09c065ab
 
 COCOAPODS: 1.7.5
