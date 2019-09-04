@@ -72,6 +72,8 @@ class anawerQuizuViewController: UIViewController {
                 
             }
             
+            self.questions = questions
+            
             self.quiz = questions[self.quizNumber]
         }
         
@@ -105,7 +107,7 @@ class anawerQuizuViewController: UIViewController {
             
             let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
                 print("次の問題")
-                self.performSegue(withIdentifier: "toviewController", sender: nil)
+                self.goNextQuiz()
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 
@@ -125,7 +127,7 @@ class anawerQuizuViewController: UIViewController {
             
             let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
                 print("次の問題")
-                self.performSegue(withIdentifier: "toviewController", sender: nil)
+                self.goNextQuiz()
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 
@@ -150,7 +152,7 @@ class anawerQuizuViewController: UIViewController {
             
             let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
                 print("次の問題")
-                self.performSegue(withIdentifier: "toviewController", sender: nil)
+                self.goNextQuiz()
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 
@@ -171,7 +173,7 @@ class anawerQuizuViewController: UIViewController {
             
             let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
                 print("次の問題")
-                self.performSegue(withIdentifier: "toviewController", sender: nil)
+                self.goNextQuiz()
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 
@@ -198,7 +200,7 @@ class anawerQuizuViewController: UIViewController {
             
             let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
                 print("次の問題")
-                self.performSegue(withIdentifier: "toviewController", sender: nil)
+                self.goNextQuiz()
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 
@@ -218,7 +220,7 @@ class anawerQuizuViewController: UIViewController {
             
             let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
                 print("次の問題")
-                self.performSegue(withIdentifier: "toviewController", sender: nil)
+                self.goNextQuiz()
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 
@@ -243,7 +245,7 @@ class anawerQuizuViewController: UIViewController {
             
             let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
                 print("次の問題")
-                self.performSegue(withIdentifier: "toviewController", sender: nil)
+                self.goNextQuiz()
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 
@@ -263,7 +265,7 @@ class anawerQuizuViewController: UIViewController {
             
             let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
                 print("次の問題")
-                self.performSegue(withIdentifier: "toviewController", sender: nil)
+                self.goNextQuiz()
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 
@@ -278,6 +280,10 @@ class anawerQuizuViewController: UIViewController {
             }
             
         }
+    }
+    
+    func goNextQuiz() {
+        quiz = questions[quizNumber + 1]
     }
     
 }
