@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4BD3FCED9CEA3BB5D5253DF4 /* Pods_nazonazpProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965A6AE55DE90FD4E0E32A8E /* Pods_nazonazpProject.framework */; };
+		7D1A1CE3231F5E550003E38F /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A1CE2231F5E550003E38F /* PopupViewController.swift */; };
 		7D3D91D523175EAE007DF52C /* hiraraAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3D91D423175EAE007DF52C /* hiraraAnswerViewController.swift */; };
 		7D3D91D723175ED8007DF52C /* taramaAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3D91D623175ED8007DF52C /* taramaAnswerViewController.swift */; };
 		7D763B0022FED0350015898D /* addQuizuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D763AFF22FED0350015898D /* addQuizuViewController.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		0DC58E7F872751496E0986F8 /* Pods-nazonazpProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nazonazpProject.release.xcconfig"; path = "Target Support Files/Pods-nazonazpProject/Pods-nazonazpProject.release.xcconfig"; sourceTree = "<group>"; };
+		7D1A1CE2231F5E550003E38F /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		7D3D91D423175EAE007DF52C /* hiraraAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hiraraAnswerViewController.swift; sourceTree = "<group>"; };
 		7D3D91D623175ED8007DF52C /* taramaAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taramaAnswerViewController.swift; sourceTree = "<group>"; };
 		7D763AFF22FED0350015898D /* addQuizuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addQuizuViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				7D94204A230B9E3300EC9593 /* RegionalSelctionViewController.swift */,
 				7D3D91D423175EAE007DF52C /* hiraraAnswerViewController.swift */,
 				7D3D91D623175ED8007DF52C /* taramaAnswerViewController.swift */,
+				7D1A1CE2231F5E550003E38F /* PopupViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				7D3D91D523175EAE007DF52C /* hiraraAnswerViewController.swift in Sources */,
 				7D763B0422FED1AF0015898D /* anawerQuizuViewController.swift in Sources */,
 				7DC5760022FC475600E49C40 /* ViewController.swift in Sources */,
+				7D1A1CE3231F5E550003E38F /* PopupViewController.swift in Sources */,
 				7D9DDE0A230F7C7A00074068 /* addQuiz.swift in Sources */,
 				7D3D91D723175ED8007DF52C /* taramaAnswerViewController.swift in Sources */,
 				7DC575FE22FC475600E49C40 /* AppDelegate.swift in Sources */,

@@ -24,6 +24,8 @@ class anawerQuizuViewController: UIViewController {
     //問題を保存する変数
     var questions: [AddQuiz] = []
     
+    var answers:[String] = []
+    
     var quizNumber = 0
     
     var quiz:AddQuiz! = nil {
@@ -84,7 +86,7 @@ class anawerQuizuViewController: UIViewController {
     //問題ランダム
     //答えの配列作成
     func random(quiz: AddQuiz) {
-        var answers = [quiz.answer, quiz.dummy1, quiz.dummy2, quiz.dummy3]
+        answers = [quiz.answer, quiz.dummy1, quiz.dummy2, quiz.dummy3]
         answers.shuffle()
         
         answerbutton1.setTitle(answers[0], for: .normal)
@@ -93,6 +95,189 @@ class anawerQuizuViewController: UIViewController {
         answerbutton4.setTitle(answers[3], for: .normal)
     }
     
- 
+    //アラートの作成
+    @IBAction func didClickButoon1(_ sender: UIButton) {
+        
+        if quiz.answer == answers[0] {
+            
+            //正解アラート作成
+            let alert = UIAlertController(title: "answer", message: "正解です", preferredStyle:.alert)
+            
+            let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
+                print("次の問題")
+                self.performSegue(withIdentifier: "toviewController", sender: nil)
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                
+                
+                
+                alert.addAction(backAction)
+                
+                
+                self.present(alert, animated: true, completion:nil)
+                
+            }
+            
+        } else {
+            
+            //不正解アラート作成
+            let alert = UIAlertController(title: "answer", message: " 不正解です", preferredStyle:.alert)
+            
+            let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
+                print("次の問題")
+                self.performSegue(withIdentifier: "toviewController", sender: nil)
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                
+                
+                
+                alert.addAction(backAction)
+                
+                
+                self.present(alert, animated: true, completion:nil)
+                
+           
+        }
+        
+    }
+    }
+    
+    @IBAction func didCkickButton2(_ sender: UIButton) {
+        if quiz.answer == answers[1] {
+            
+            //正解アラート作成
+            let alert = UIAlertController(title: "answer", message: "正解です", preferredStyle:.alert)
+            
+            let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
+                print("次の問題")
+                self.performSegue(withIdentifier: "toviewController", sender: nil)
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                
+                
+                
+                alert.addAction(backAction)
+                
+                
+                self.present(alert, animated: true, completion:nil)
+                
+            }
+            
+        } else {
+            
+            
+            //不正解アラート作成
+            let alert = UIAlertController(title: "answer", message: " 不正解です", preferredStyle:.alert)
+            
+            let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
+                print("次の問題")
+                self.performSegue(withIdentifier: "toviewController", sender: nil)
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                
+                
+                
+                alert.addAction(backAction)
+                
+                
+                self.present(alert, animated: true, completion:nil)
+                
+                
+            }
+            
+        }
+        
+        }
+    
 
+    @IBAction func didClickButton3(_ sender: UIButton) {
+        if quiz.answer == answers[2] {
+            
+            //正解アラート作成
+            let alert = UIAlertController(title: "answer", message: "正解です", preferredStyle:.alert)
+            
+            let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
+                print("次の問題")
+                self.performSegue(withIdentifier: "toviewController", sender: nil)
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                
+                
+                
+                alert.addAction(backAction)
+                
+                
+                self.present(alert, animated: true, completion:nil)
+                
+            }
+           
+        } else {
+            
+            //不正解アラート作成
+            let alert = UIAlertController(title: "answer", message: " 不正解です", preferredStyle:.alert)
+            
+            let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
+                print("次の問題")
+                self.performSegue(withIdentifier: "toviewController", sender: nil)
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                
+                
+                
+                alert.addAction(backAction)
+                
+                
+                self.present(alert, animated: true, completion:nil)
+                
+                
+            }
+           
+        }
+    }
+    
+    @IBAction func didCkickButton4(_ sender: UIButton) {
+        if quiz.answer == answers[3] {
+          
+            //正解アラート作成
+            let alert = UIAlertController(title: "answer", message: "正解です", preferredStyle:.alert)
+            
+            let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
+                print("次の問題")
+                self.performSegue(withIdentifier: "toviewController", sender: nil)
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                
+                
+                
+                alert.addAction(backAction)
+                
+                
+                self.present(alert, animated: true, completion:nil)
+                
+            }
+            
+        } else {
+            
+            //不正解アラート作成
+            let alert = UIAlertController(title: "answer", message: " 不正解です", preferredStyle:.alert)
+            
+            let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
+                print("次の問題")
+                self.performSegue(withIdentifier: "toviewController", sender: nil)
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                
+                
+                
+                alert.addAction(backAction)
+                
+                
+                self.present(alert, animated: true, completion:nil)
+                
+                
+            }
+            
+        }
+    }
+    
 }
