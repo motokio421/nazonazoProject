@@ -18,7 +18,7 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        resultLabel.text = nil
+        resultLabel.text = String(correctcount)
 
     }
     
