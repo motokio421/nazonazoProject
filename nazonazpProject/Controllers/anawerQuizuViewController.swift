@@ -35,6 +35,8 @@ class anawerQuizuViewController: UIViewController {
             random(quiz: newValue)
         }
     }
+    
+    var correctcount = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -104,6 +106,8 @@ class anawerQuizuViewController: UIViewController {
         
         if quiz.answer == answers[0] {
             
+             correctcount += 1
+            
             //正解アラート作成
             let alert = UIAlertController(title: "⭕️", message: "正解です", preferredStyle:.alert)
             
@@ -148,6 +152,8 @@ class anawerQuizuViewController: UIViewController {
     
     @IBAction func didCkickButton2(_ sender: UIButton) {
         if quiz.answer == answers[1] {
+            
+            correctcount += 1
             
             //正解アラート作成
             let alert = UIAlertController(title: "⭕️", message: "正解です", preferredStyle:.alert)
@@ -197,6 +203,8 @@ class anawerQuizuViewController: UIViewController {
     @IBAction func didClickButton3(_ sender: UIButton) {
         if quiz.answer == answers[2] {
             
+             correctcount += 1
+            
             //正解アラート作成
             let alert = UIAlertController(title: "⭕️", message: "正解です", preferredStyle:.alert)
             
@@ -241,6 +249,8 @@ class anawerQuizuViewController: UIViewController {
     
     @IBAction func didCkickButton4(_ sender: UIButton) {
         if quiz.answer == answers[3] {
+            
+             correctcount += 1
           
             //正解アラート作成
             let alert = UIAlertController(title: "⭕️", message: "正解です", preferredStyle:.alert)
@@ -289,10 +299,23 @@ class anawerQuizuViewController: UIViewController {
         
         //Result 画面遷移
         if quizNumber == 10 {
-            performSegue(withIdentifier: "toResult", sender: nil)
+            
+            performSegue(withIdentifier: "toResult", sender: correctcount)
+            
+           
         } else {
             quiz = questions[quizNumber]
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+            if segue.identifier == "toResult" {
+                
+                let nextVC = segue.destination as! ResultViewController
+                
+                nextVC.correctcount = sender as! Int
+            }
     }
     
 //    //Result画面に画面遷移

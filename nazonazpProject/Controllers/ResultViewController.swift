@@ -9,15 +9,30 @@
 import UIKit
 
 class ResultViewController: UIViewController {
+    
+    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var messagelabel: UILabel!
+    
+    var correctcount = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        resultLabel.text = nil
+
+    }
+    
+    @IBAction func backToQuizbutton(_ sender: UIButton) {
+    }
+    
+    
+    @IBAction func twitterButton(_ sender: UIButton) {
     }
     
 
-   
+    @IBAction func backToHome(_ sender: UIButton) {
+    }
+    
     
 
 }
