@@ -21,6 +21,7 @@ class anawerQuizuViewController: UIViewController {
     @IBOutlet weak var answerbutton4: UIButton! //答え４
     
     var area = ""
+    
     //問題を保存する変数
     var questions: [AddQuiz] = []
     
@@ -72,6 +73,7 @@ class anawerQuizuViewController: UIViewController {
                 
             }
             
+            questions.shuffle()
             self.questions = questions
             
             self.quiz = questions[self.quizNumber]
@@ -103,7 +105,7 @@ class anawerQuizuViewController: UIViewController {
         if quiz.answer == answers[0] {
             
             //正解アラート作成
-            let alert = UIAlertController(title: "answer", message: "正解です", preferredStyle:.alert)
+            let alert = UIAlertController(title: "⭕️", message: "正解です", preferredStyle:.alert)
             
             let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
                 print("次の問題")
@@ -123,7 +125,7 @@ class anawerQuizuViewController: UIViewController {
         } else {
             
             //不正解アラート作成
-            let alert = UIAlertController(title: "answer", message: " 不正解です", preferredStyle:.alert)
+            let alert = UIAlertController(title: "❌", message: " 不正解です", preferredStyle:.alert)
             
             let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
                 print("次の問題")
@@ -148,7 +150,7 @@ class anawerQuizuViewController: UIViewController {
         if quiz.answer == answers[1] {
             
             //正解アラート作成
-            let alert = UIAlertController(title: "answer", message: "正解です", preferredStyle:.alert)
+            let alert = UIAlertController(title: "⭕️", message: "正解です", preferredStyle:.alert)
             
             let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
                 print("次の問題")
@@ -169,7 +171,7 @@ class anawerQuizuViewController: UIViewController {
             
             
             //不正解アラート作成
-            let alert = UIAlertController(title: "answer", message: " 不正解です", preferredStyle:.alert)
+            let alert = UIAlertController(title: "❌", message: " 不正解です", preferredStyle:.alert)
             
             let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
                 print("次の問題")
@@ -196,7 +198,7 @@ class anawerQuizuViewController: UIViewController {
         if quiz.answer == answers[2] {
             
             //正解アラート作成
-            let alert = UIAlertController(title: "answer", message: "正解です", preferredStyle:.alert)
+            let alert = UIAlertController(title: "⭕️", message: "正解です", preferredStyle:.alert)
             
             let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
                 print("次の問題")
@@ -216,7 +218,7 @@ class anawerQuizuViewController: UIViewController {
         } else {
             
             //不正解アラート作成
-            let alert = UIAlertController(title: "answer", message: " 不正解です", preferredStyle:.alert)
+            let alert = UIAlertController(title: "❌", message: " 不正解です", preferredStyle:.alert)
             
             let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
                 print("次の問題")
@@ -241,7 +243,7 @@ class anawerQuizuViewController: UIViewController {
         if quiz.answer == answers[3] {
           
             //正解アラート作成
-            let alert = UIAlertController(title: "answer", message: "正解です", preferredStyle:.alert)
+            let alert = UIAlertController(title: "⭕️", message: "正解です", preferredStyle:.alert)
             
             let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
                 print("次の問題")
@@ -261,7 +263,7 @@ class anawerQuizuViewController: UIViewController {
         } else {
             
             //不正解アラート作成
-            let alert = UIAlertController(title: "answer", message: " 不正解です", preferredStyle:.alert)
+            let alert = UIAlertController(title: "❌", message: " 不正解です", preferredStyle:.alert)
             
             let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
                 print("次の問題")
@@ -283,7 +285,23 @@ class anawerQuizuViewController: UIViewController {
     }
     
     func goNextQuiz() {
-        quiz = questions[quizNumber + 1]
+        quizNumber += 1
+        
+        //Result 画面遷移
+        if quizNumber == 10 {
+            performSegue(withIdentifier: "toResult", sender: nil)
+        } else {
+            quiz = questions[quizNumber]
+        }
     }
+    
+//    //Result画面に画面遷移
+//    func resulttransition()  {
+//
+//        if quizNumber == 10 {
+//            performSegue(withIdentifier: "toResult", sender: nil)
+//        }
+//
+//    }
     
 }
