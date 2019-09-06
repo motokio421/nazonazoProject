@@ -22,15 +22,19 @@ class ResultViewController: UIViewController {
 
     }
     
-    @IBAction func backToQuizbutton(_ sender: UIButton) {
-    }
+  
     
     
     @IBAction func twitterButton(_ sender: UIButton) {
+        let data = [correctcount,"宮古島方言クイズ、10問中..."] as Any?
+        let controller = UIActivityViewController(activityItems: data as! [Any], applicationActivities: nil)
+        
+        present(controller, animated: true, completion: nil)
     }
     
 
     @IBAction func backToHome(_ sender: UIButton) {
+        performSegue(withIdentifier: "tohome", sender: nil)
     }
     
     

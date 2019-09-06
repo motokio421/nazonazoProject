@@ -107,14 +107,6 @@
                                     <action selector="didCkickButton2:" destination="4Mu-A6-iUt" eventType="touchUpInside" id="hwg-Yc-Gh4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRm-Ip-hR9">
-                                <rect key="frame" x="20" y="797" width="108" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="地域選択に戻る"/>
-                                <connections>
-                                    <action selector="backToAreaButton:" destination="4Mu-A6-iUt" eventType="touchUpInside" id="vdj-mf-rv0"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z2S-Ii-SUI">
                                 <rect key="frame" x="88" y="44" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -126,6 +118,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRm-Ip-hR9">
+                                <rect key="frame" x="57" y="681" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="地域選択に戻る"/>
+                                <connections>
+                                    <action selector="backToAreaButton:" destination="4Mu-A6-iUt" eventType="touchUpInside" id="vdj-mf-rv0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ifc-v9-QZa"/>
@@ -167,42 +167,42 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8f-B0-SnZ">
-                                <rect key="frame" x="78" y="346" width="259" height="66"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfR-SM-c4a">
+                                <rect key="frame" x="135" y="528" width="144" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2k-52-Uu2">
-                                <rect key="frame" x="131" y="502" width="153" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="もう一度解く"/>
+                                <state key="normal" title="ツイートする"/>
                                 <connections>
-                                    <action selector="backToQuizbutton:" destination="rnT-sE-iGV" eventType="touchUpInside" id="sRX-1w-vAK"/>
+                                    <action selector="twitterButton:" destination="rnT-sE-iGV" eventType="touchUpInside" id="5Ul-d2-6cm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9H-Ur-42C">
-                                <rect key="frame" x="150" y="700" width="106" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ホームに戻る"/>
-                                <connections>
-                                    <action selector="backToHome:" destination="rnT-sE-iGV" eventType="touchUpInside" id="r3X-Tf-Rbv"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRl-Mt-5Lp">
-                                <rect key="frame" x="182" y="431" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaU-dk-RWM">
+                                <rect key="frame" x="85" y="397" width="161" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfR-SM-c4a">
-                                <rect key="frame" x="131" y="605" width="144" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正解！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQN-7y-3zC">
+                                <rect key="frame" x="223" y="397" width="52" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ツイートする"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10問中..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRl-Mt-5Lp">
+                                <rect key="frame" x="55" y="346" width="305" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9H-Ur-42C">
+                                <rect key="frame" x="147" y="649" width="106" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ホームに戻る"/>
                                 <connections>
-                                    <action selector="twitterButton:" destination="rnT-sE-iGV" eventType="touchUpInside" id="5Ul-d2-6cm"/>
+                                    <action selector="backToHome:" destination="rnT-sE-iGV" eventType="touchUpInside" id="r3X-Tf-Rbv"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="tohome" id="8mX-Iw-C8W"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -211,7 +211,7 @@
                     </view>
                     <connections>
                         <outlet property="messagelabel" destination="jRl-Mt-5Lp" id="BE8-Ok-Axt"/>
-                        <outlet property="resultLabel" destination="y8f-B0-SnZ" id="VGC-Jj-4db"/>
+                        <outlet property="resultLabel" destination="EaU-dk-RWM" id="kMc-ja-q0s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aNY-ih-IN4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -509,6 +509,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="4VT-8O-CW6"/>
-        <segue reference="d8z-dG-g8G"/>
+        <segue reference="8mX-Iw-C8W"/>
     </inferredMetricsTieBreakers>
 </document>

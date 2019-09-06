@@ -58,12 +58,12 @@ class RegionalSelctionViewController: UIViewController {
     }
     
     @IBAction func hiraraDidCkickButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "toHirara", sender: "平良")
+        performSegue(withIdentifier: "tonisibeAnswer", sender: "平良")
     }
 
     
     @IBAction func taramaDidClickButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "toTarama", sender: "多良間")
+        performSegue(withIdentifier: "tonisibeAnswer", sender: "多良間")
     }
     
     
