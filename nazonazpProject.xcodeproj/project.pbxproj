@@ -70,13 +70,13 @@
 		7D763B0222FED1290015898D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7D763B0322FED1AF0015898D /* anawerQuizuViewController.swift */,
-				7D763AFF22FED0350015898D /* addQuizuViewController.swift */,
 				7D942048230B9DB000EC9593 /* SplashViewController.swift */,
+				7D4F048723209AA9002B2000 /* ViewController.swift */,
+				7D763AFF22FED0350015898D /* addQuizuViewController.swift */,
 				7D94204A230B9E3300EC9593 /* RegionalSelctionViewController.swift */,
+				7D763B0322FED1AF0015898D /* anawerQuizuViewController.swift */,
 				7D3D91D423175EAE007DF52C /* hiraraAnswerViewController.swift */,
 				7D3D91D623175ED8007DF52C /* taramaAnswerViewController.swift */,
-				7D4F048723209AA9002B2000 /* ViewController.swift */,
 				7D4F048923209C37002B2000 /* ResultViewController.swift */,
 			);
 			path = Controllers;
@@ -403,6 +403,7 @@
 			baseConfigurationReference = DB7A0F426E83DFEB4C62FA3D /* Pods-nazonazpProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P7397529PZ;
 				INFOPLIST_FILE = nazonazpProject/Info.plist;
@@ -422,6 +423,7 @@
 			baseConfigurationReference = 0DC58E7F872751496E0986F8 /* Pods-nazonazpProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P7397529PZ;
 				INFOPLIST_FILE = nazonazpProject/Info.plist;

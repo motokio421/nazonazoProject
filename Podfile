@@ -14,5 +14,6 @@ target 'nazonazpProject' do
   pod "McPicker"
   pod 'McPicker', '~> 2.0.0'
   pod 'STPopup'
+  pod 'SwiftyButton'
 end
  

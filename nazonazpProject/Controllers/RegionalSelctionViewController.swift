@@ -66,6 +66,10 @@ class RegionalSelctionViewController: UIViewController {
         performSegue(withIdentifier: "tonisibeAnswer", sender: "多良間")
     }
     
+    @IBAction func backToHome(_ sender: UIButton) {
+        performSegue(withIdentifier: "tohome", sender: nil)
+    }
+    
     
 }
 

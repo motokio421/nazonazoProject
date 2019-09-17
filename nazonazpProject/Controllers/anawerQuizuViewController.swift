@@ -11,6 +11,7 @@ import Firebase
 import STPopup
 
 
+
 class anawerQuizuViewController: UIViewController {
     
     @IBOutlet weak var imageView1: UIImageView! //問題数

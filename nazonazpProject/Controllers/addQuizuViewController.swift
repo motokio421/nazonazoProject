@@ -93,7 +93,10 @@ class addQuizuViewController: UIViewController {
         
     }
     
-   
+    @IBAction func backtohome(_ sender: UIButton) {
+        performSegue(withIdentifier: "toviewController", sender: nil)
+    }
+    
     
     
         
