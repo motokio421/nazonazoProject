@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import McPicker
 
-class addQuizuViewController: UIViewController {
+class addQuizuViewController: UIViewController, UITextFieldDelegate {
     
     //登録された問題を保存する変数
     var questions: AddQuiz! = nil
@@ -24,6 +24,12 @@ class addQuizuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        questonTextfiled.delegate = self
+        answerTextfiled.delegate = self
+        dummy1Textfiled.delegate = self
+        dummy2Textfiled.delegate = self
+        dummy3Textfiled.delegate = self
 
         //配列作成
         let data: [[String]] = [["西辺", "平良", "多良間"]]
@@ -49,6 +55,28 @@ class addQuizuViewController: UIViewController {
             }
         }
     }
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool{
+
+        questonTextfiled.text = textField.text
+        answerTextfiled.text = textField.text
+        dummy1Textfiled.text = textField.text
+        dummy2Textfiled.text = textField.text
+        dummy3Textfiled.text = textField.text
+
+        // キーボードを閉じる
+        textField.resignFirstResponder()
+
+        return true
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
     
 
     @IBAction func didClickRegistrabutton(_ sender: UIButton) {

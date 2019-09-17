@@ -109,6 +109,7 @@ PODS:
     - nanopb (~> 0.3)
   - gRPC-Core/Interface (1.21.0)
   - GTMSessionFetcher/Core (1.2.2)
+  - IQKeyboardManagerSwift (6.4.1)
   - leveldb-library (1.20)
   - McPicker (2.0.1)
   - nanopb (0.3.901):
@@ -126,6 +127,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Firestore
+  - IQKeyboardManagerSwift
   - McPicker
   - McPicker (~> 2.0.0)
   - RevealingSplashView
@@ -151,6 +153,7 @@ SPEC REPOS:
     - "gRPC-C++"
     - gRPC-Core
     - GTMSessionFetcher
+    - IQKeyboardManagerSwift
     - leveldb-library
     - McPicker
     - nanopb
@@ -177,6 +180,7 @@ SPEC CHECKSUMS:
   "gRPC-C++": 9dfe7b44821e7b3e44aacad2af29d2c21f7cde83
   gRPC-Core: c9aef9a261a1247e881b18059b84d597293c9947
   GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
+  IQKeyboardManagerSwift: d2df660d0b8d64a15cb2537c9ff303213fa515b2
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   McPicker: a0a6b8ece8f1642e05401a29867463aba501188b
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
@@ -185,6 +189,6 @@ SPEC CHECKSUMS:
   STPopup: a9045557bc48a0df51fbb7bf0544447c5fe84d34
   SwiftyButton: 5b0ef314e9cf61cf8a83e456ddd1ea1f53f30598
 
-PODFILE CHECKSUM: 21c3fcb5536b63021cfedcf239b234877bcd7a92
+PODFILE CHECKSUM: 75b6accd40fb1ca2f9ba0a57ec97253349dc71a1
 
 COCOAPODS: 1.7.5

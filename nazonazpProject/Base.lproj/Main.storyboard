@@ -73,7 +73,7 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="waido_logo" translatesAutoresizingMaskIntoConstraints="NO" id="pyv-4C-AhI">
-                                <rect key="frame" x="62" y="56" width="290" height="134.5"/>
+                                <rect key="frame" x="62" y="56" width="290.00000000000045" height="134.5"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6E-2s-cXy">
                                 <rect key="frame" x="116" y="424" width="182" height="48"/>
@@ -350,7 +350,7 @@
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地域" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OR7-uc-tpi">
                                 <rect key="frame" x="65.5" y="199" width="328" height="30"/>
@@ -366,7 +366,7 @@
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="afT-RO-8Ub">
                                 <rect key="frame" x="22" y="485" width="370" height="30"/>
@@ -397,7 +397,7 @@
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aq4-NB-bER" customClass="McTextField" customModule="McPicker">
                                 <rect key="frame" x="22" y="241" width="370" height="30"/>
@@ -529,14 +529,14 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWW-5U-rnR">
-                                <rect key="frame" x="10" y="437" width="16" height="22"/>
+                                <rect key="frame" x="10" y="397" width="102" height="102"/>
                                 <state key="normal" image="tarama"/>
                                 <connections>
                                     <action selector="taramaDidClickButton:" destination="HvZ-aj-WdX" eventType="touchUpInside" id="FXp-Q3-tiW"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="waido_logo" translatesAutoresizingMaskIntoConstraints="NO" id="YE5-Sk-N8S">
-                                <rect key="frame" x="62" y="56" width="290" height="89.5"/>
+                                <rect key="frame" x="62" y="56" width="290.00000000000045" height="89.5"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xG2-Bn-Q8Z">
                                 <rect key="frame" x="191.5" y="746" width="31" height="30"/>
@@ -548,14 +548,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1b6-x3-RaO">
-                                <rect key="frame" x="199" y="437" width="16" height="22"/>
+                                <rect key="frame" x="156" y="397" width="102" height="102"/>
                                 <state key="normal" image="hirara"/>
                                 <connections>
                                     <action selector="hiraraDidCkickButton:" destination="HvZ-aj-WdX" eventType="touchUpInside" id="e2H-N9-jLx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e08-h4-3J9">
-                                <rect key="frame" x="388" y="437" width="16" height="22"/>
+                                <rect key="frame" x="302" y="397" width="102" height="102"/>
                                 <state key="normal" image="nisi"/>
                                 <connections>
                                     <action selector="nisibeDidClickButton:" destination="HvZ-aj-WdX" eventType="touchUpInside" id="ndC-qy-M7J"/>
@@ -605,6 +605,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="umh-j1-6mk"/>
-        <segue reference="f2r-Nn-I1M"/>
+        <segue reference="d8z-dG-g8G"/>
     </inferredMetricsTieBreakers>
 </document>

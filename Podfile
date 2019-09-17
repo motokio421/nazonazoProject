@@ -15,5 +15,6 @@ target 'nazonazpProject' do
   pod 'McPicker', '~> 2.0.0'
   pod 'STPopup'
   pod 'SwiftyButton'
+  pod 'IQKeyboardManagerSwift'
 end
  
