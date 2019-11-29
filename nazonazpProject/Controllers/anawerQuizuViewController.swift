@@ -38,15 +38,31 @@ class anawerQuizuViewController: UIViewController {
     }
     
     var correctcount = 0
+    
+    //画像の配列
+    let images = [
+        "quiz1",
+        "quiz2",
+        "quiz3",
+        "quiz4",
+        "quiz5",
+        "quiz6",
+        "quiz7",
+        "quiz8",
+        "quiz9",
+        "quiz10",
+    ]
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //画像の追加
+        
         // 画像を変数に保存
-        let answerimage = UIImage(named: "quiz1")
+        //let answerimage = UIImage(named: "quiz1")
+        
         //画像の表示
-        imageView1.image = answerimage
+        imageView1.image = UIImage(named: images[quizNumber])
         
         //firebsseに接続
         let db = Firestore.firestore()
@@ -105,145 +121,84 @@ class anawerQuizuViewController: UIViewController {
     //アラートの作成
     @IBAction func didClickButoon1(_ sender: UIButton) {
         
+        
         if quiz.answer == answers[0] {
             
-             correctcount += 1
-            
-            //正解アラート作成
-            let alert = UIAlertController(title: "⭕️", message: "正解です", preferredStyle:.alert)
-            
-            let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
-                print("次の問題")
-                self.goNextQuiz()
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                
-                
-                
-                alert.addAction(backAction)
-                
-                
-                self.present(alert, animated: true, completion:nil)
-                
-            }
+             correctCase()
             
         } else {
             
-            //不正解アラート作成
-            let alert = UIAlertController(title: "❌", message: " 不正解です", preferredStyle:.alert)
-            
-            let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
-                print("次の問題")
-                self.goNextQuiz()
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                
-                
-                
-                alert.addAction(backAction)
-                
-                
-                self.present(alert, animated: true, completion:nil)
-                
-           
-        }
+            wrongCase()
         
     }
+    }
+    
+    fileprivate func correctCase() {
+        correctcount += 1
+        
+        //正解アラート作成
+        let alert = UIAlertController(title: "⭕️", message: "正解です", preferredStyle:.alert)
+        
+        let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
+            print("次の問題")
+            self.goNextQuiz()
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            
+            
+            
+            alert.addAction(backAction)
+            
+            
+            self.present(alert, animated: true, completion:nil)
+            
+        }
+    }
+    
+    fileprivate func wrongCase() {
+        //不正解アラート作成
+        let alert = UIAlertController(title: "❌", message: "答えは\(quiz.answer)です", preferredStyle:.alert)
+        
+        let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
+            print("次の問題")
+            self.goNextQuiz()
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            
+            
+            
+            alert.addAction(backAction)
+            
+            
+            self.present(alert, animated: true, completion:nil)
+            
+            
+        }
     }
     
     @IBAction func didCkickButton2(_ sender: UIButton) {
         if quiz.answer == answers[1] {
             
-            correctcount += 1
-            
-            //正解アラート作成
-            let alert = UIAlertController(title: "⭕️", message: "正解です", preferredStyle:.alert)
-            
-            let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
-                print("次の問題")
-                self.goNextQuiz()
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                
-                
-                
-                alert.addAction(backAction)
-                
-                
-                self.present(alert, animated: true, completion:nil)
-                
-            }
+            correctCase()
             
         } else {
             
             
-            //不正解アラート作成
-            let alert = UIAlertController(title: "❌", message: " 不正解です", preferredStyle:.alert)
-            
-            let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
-                print("次の問題")
-                self.goNextQuiz()
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                
-                
-                
-                alert.addAction(backAction)
-                
-                
-                self.present(alert, animated: true, completion:nil)
-                
-                
-            }
+            wrongCase()
             
         }
         
-        }
+    }
     
 
     @IBAction func didClickButton3(_ sender: UIButton) {
         if quiz.answer == answers[2] {
             
-             correctcount += 1
-            
-            //正解アラート作成
-            let alert = UIAlertController(title: "⭕️", message: "正解です", preferredStyle:.alert)
-            
-            let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
-                print("次の問題")
-                self.goNextQuiz()
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                
-                
-                
-                alert.addAction(backAction)
-                
-                
-                self.present(alert, animated: true, completion:nil)
-                
-            }
+             correctCase()
            
         } else {
             
-            //不正解アラート作成
-            let alert = UIAlertController(title: "❌", message: " 不正解です", preferredStyle:.alert)
-            
-            let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
-                print("次の問題")
-                self.goNextQuiz()
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                
-                
-                
-                alert.addAction(backAction)
-                
-                
-                self.present(alert, animated: true, completion:nil)
-                
-                
-            }
+           wrongCase()
            
         }
     }
@@ -251,46 +206,12 @@ class anawerQuizuViewController: UIViewController {
     @IBAction func didCkickButton4(_ sender: UIButton) {
         if quiz.answer == answers[3] {
             
-             correctcount += 1
-          
-            //正解アラート作成
-            let alert = UIAlertController(title: "⭕️", message: "正解です", preferredStyle:.alert)
-            
-            let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
-                print("次の問題")
-                self.goNextQuiz()
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                
-                
-                
-                alert.addAction(backAction)
-                
-                
-                self.present(alert, animated: true, completion:nil)
-                
-            }
+            correctCase()
             
         } else {
             
-            //不正解アラート作成
-            let alert = UIAlertController(title: "❌", message: " 不正解です", preferredStyle:.alert)
             
-            let backAction = UIAlertAction(title: "次の問題へ", style: .default) { (UIAlertAction) in
-                print("次の問題")
-                self.goNextQuiz()
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                
-                
-                
-                alert.addAction(backAction)
-                
-                
-                self.present(alert, animated: true, completion:nil)
-                
-                
-            }
+            wrongCase()
             
         }
     }
@@ -305,6 +226,7 @@ class anawerQuizuViewController: UIViewController {
             
            
         } else {
+            imageView1.image = UIImage(named: images[quizNumber])
             quiz = questions[quizNumber]
         }
     }

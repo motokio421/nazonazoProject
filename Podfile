@@ -16,5 +16,7 @@ target 'nazonazpProject' do
   pod 'STPopup'
   pod 'SwiftyButton'
   pod 'IQKeyboardManagerSwift'
+  pod 'Firebase/Core'
+  pod 'Firebase/AdMob'
 end
  

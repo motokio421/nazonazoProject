@@ -73,7 +73,7 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="waido_logo" translatesAutoresizingMaskIntoConstraints="NO" id="pyv-4C-AhI">
-                                <rect key="frame" x="62" y="56" width="290.00000000000045" height="134.5"/>
+                                <rect key="frame" x="62" y="56" width="290" height="134.5"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6E-2s-cXy">
                                 <rect key="frame" x="116" y="424" width="182" height="48"/>
@@ -123,7 +123,7 @@
                                 <rect key="frame" x="62" y="297.5" width="290" height="89.5"/>
                                 <color key="backgroundColor" red="0.94275027513504028" green="0.75833574564965123" blue="0.41905851236071057" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
@@ -135,7 +135,7 @@
                                 <rect key="frame" x="62" y="602.5" width="290" height="89.5"/>
                                 <color key="backgroundColor" red="0.94275027509999998" green="0.75833574560000006" blue="0.41905851240000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -146,7 +146,7 @@
                                 <rect key="frame" x="62" y="399" width="290" height="89.5"/>
                                 <color key="backgroundColor" red="0.94275027509999998" green="0.75833574560000006" blue="0.41905851240000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -182,7 +182,7 @@
                                 <rect key="frame" x="62" y="500.5" width="290" height="90"/>
                                 <color key="backgroundColor" red="0.94275027509999998" green="0.75833574560000006" blue="0.41905851240000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -529,14 +529,14 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWW-5U-rnR">
-                                <rect key="frame" x="10" y="397" width="102" height="102"/>
+                                <rect key="frame" x="10" y="437" width="16" height="22"/>
                                 <state key="normal" image="tarama"/>
                                 <connections>
                                     <action selector="taramaDidClickButton:" destination="HvZ-aj-WdX" eventType="touchUpInside" id="FXp-Q3-tiW"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="waido_logo" translatesAutoresizingMaskIntoConstraints="NO" id="YE5-Sk-N8S">
-                                <rect key="frame" x="62" y="56" width="290.00000000000045" height="89.5"/>
+                                <rect key="frame" x="62" y="56" width="290" height="89.5"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xG2-Bn-Q8Z">
                                 <rect key="frame" x="191.5" y="746" width="31" height="30"/>
@@ -548,14 +548,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1b6-x3-RaO">
-                                <rect key="frame" x="156" y="397" width="102" height="102"/>
+                                <rect key="frame" x="199" y="437" width="16" height="22"/>
                                 <state key="normal" image="hirara"/>
                                 <connections>
                                     <action selector="hiraraDidCkickButton:" destination="HvZ-aj-WdX" eventType="touchUpInside" id="e2H-N9-jLx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e08-h4-3J9">
-                                <rect key="frame" x="302" y="397" width="102" height="102"/>
+                                <rect key="frame" x="388" y="437" width="16" height="22"/>
                                 <state key="normal" image="nisi"/>
                                 <connections>
                                     <action selector="nisibeDidClickButton:" destination="HvZ-aj-WdX" eventType="touchUpInside" id="ndC-qy-M7J"/>
@@ -604,7 +604,7 @@
         <image name="waido_logo" width="1629" height="1300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="umh-j1-6mk"/>
+        <segue reference="4VT-8O-CW6"/>
         <segue reference="d8z-dG-g8G"/>
     </inferredMetricsTieBreakers>
 </document>
